@@ -10,7 +10,7 @@ var corsOptions = {
     Credential: true
 }
 
-// mongoDB 연결
+// mongoDB 연결 1
 const CONNECT_URL = 'mongodb+srv://dbUser:1234@diction.iwcno.mongodb.net/kor_dic_db?retryWrites=true&w=majority'
 mongmoos.connect(CONNECT_URL, {
     useNewUrlParser: true,

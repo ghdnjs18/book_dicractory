@@ -2,7 +2,7 @@ const express = require('express')
 const wordRouter = express.Router()
 const Word = require('../../models/Word')
 
-// 정규표현식 ()? 옵션주기
+// 정규표현식 ()? 옵션주기 1
 // wordRouter.route('/(:wordClass)?/(:word)?').get( async (req, res) => {
 wordRouter.route('/(:word)?').get( async (req, res) => {
     let words = []
