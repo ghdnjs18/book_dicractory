@@ -7,11 +7,11 @@ wordRouter.route('/(:wordClass)?/(:word)?').get( async (req, res) => {
     let words = []
     // 비구조화 할당 / 특정 property를 풀어서 가져올수있디.
     const { wordClass, word } = req.params
-    console.log(word)
+    // console.log(word)
     
     if (word != "undefined" && word != undefined){
-        const queries = word.replace(/,/gi, '|')
-        console.log(queries)
+        // const queries = word.replace(/,/gi, '|')
+        // console.log(queries)
         // DB에서 쿼리로 단어를 검색
         // 단어 명으로 찾기
         try {
@@ -66,7 +66,7 @@ wordRouter.route('/(:wordClass)?/(:word)?').get( async (req, res) => {
             console.log(e)
         }
     }else {
-        console.log(word)
+        // console.log(word)
         try {
             words = [ 
                 { 
