@@ -11,7 +11,7 @@ var corsOptions = {
 }
 
 // mongoDB 연결
-const CONNECT_URL = 'mongodb+srv://dbUser:1234@diction.iwcno.mongodb.net/kor_dic_db?retryWrites=true&w=majority'
+const CONNECT_URL = 'mongodb+srv://dbUser:<1234>@diction.iwcno.mongodb.net/kor_dic_db?retryWrites=true&w=majority'
 mongmoos.connect(CONNECT_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true
