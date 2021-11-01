@@ -12,11 +12,11 @@ var corsOptions = {
 
 // mongoDB 연결
 const CONNECT_URL = 'mongodb://localhost:27017/kor_dic_db'
-mongmoos.connect(CONNECT_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-}).then(() => console.log("몽고DB 연결중..."))
-  .catch(e => console.log('데이터베이스 연결 실패 !: ${e}'))
+// mongmoos.connect(CONNECT_URL, {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true
+// }).then(() => console.log("몽고DB 연결중..."))
+//   .catch(e => console.log('데이터베이스 연결 실패 !: ${e}'))
 
 
 // 미들웨어
