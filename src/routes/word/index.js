@@ -31,15 +31,16 @@ wordRouter.route('/(:word)?').get( async (req, res) => {
                 //         {meaning: {$regex: queries}}
                 //     ]});
 
-                words = await Word.find({
-                    $or: [
-                        {keyword: {$regex: word}},
-                        {meaning: {$regex: word}}
-                    ]
-                    // 오림차순 1 asc / 내림차순 -1 desc
-                    }).sort({'_id': 'asc'})
-                    // 개수제한
-                    // .limit(5);
+            words = await Word.find({
+                $or: [
+                    {keyword: {$regex: word}},
+                    {meaning: {$regex: word}}
+                ]
+            });
+            // 오림차순 1 asc / 내림차순 -1 desc
+                // .sort({'_id': 'asc'});
+                // 개수제한
+                // .limit(5);
 
             // } else {
                 // 품사로 찾기
