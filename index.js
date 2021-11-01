@@ -26,7 +26,7 @@ app.use(logger('tiny'));
 
 app.use('/api', routes);
 
-app.get('/hello', (req, res) => { // URL 응답 테스트
+app.get('/hello', (req, res) => {
     res.send('hello world !')
 })
 
