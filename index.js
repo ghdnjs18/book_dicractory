@@ -26,6 +26,10 @@ app.use(logger('tiny'));
 
 app.use('/api', routes);
 
+app.get('/hello', (req, res) => { // URL 응답 테스트
+    res.send('hello world !')
+})
+
 // 오류 페이지 처리
 app.use((req, res, next) => {
     res.status(404).send("페이지를 찾을 수 없습니다.");
